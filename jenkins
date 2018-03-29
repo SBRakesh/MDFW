@@ -22,7 +22,7 @@ To integrate from github to jenkins
 Take URI of git repository
 Login to jenkins
 click on project
-Specify Root Pom--- ProjectName/pom.xml
+Specify Root Pom--- pom.xml
 specify the goals and options
 save
 ------------------------------------------------------------------------------------------------
