@@ -1,4 +1,4 @@
-package com.qsp.tests;
+package com.gmail.tests;
 
 import org.testng.annotations.Test;
 
