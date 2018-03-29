@@ -1,0 +1,39 @@
+configuring maven project
+
+create a maven project in jenkins
+Goto Build tab
+	--> specify absolute path of pom.xml file in Root Pom
+	--> maven command in Goals and  Options ex:- test -Dbrowser=firefox -Durl=http://www.gmail.com
+save
+
+-----------------------------------------------------------------------------------------------
+Parameters from jenkins
+
+Login to jenkins
+create a new maven project
+select This project is parameterized checkbox under general
+specify the parameter name ex-- Bname
+Enter choices ex-- firefox, chrome, ie, safari
+in Goals and Options change it like, test -browser=$Bname($ represents variables)
+save
+click on Build with parameters and select the parameter
+------------------------------------------------------------------------------------------------
+To integrate from github to jenkins
+Take URI of git repository
+Login to jenkins
+click on project
+Specify Root Pom--- ProjectName/pom.xml
+specify the goals and options
+save
+------------------------------------------------------------------------------------------------
+To run the project from jenkins wen new checkin is happened in github
+
+select Poll SCM(Source configuration management)
+specify the schedule as * * * * *
+------------------------------------------------------------------------------------------------
+Email notification configuration
+
+pre settings in Gmail
+Login to Gmail-- My account--- Apps with account access---turn on Allow less secure apps:ON
+
+In jenkins

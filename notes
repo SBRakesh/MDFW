@@ -1,0 +1,4 @@
+src/main/java---- contains generic lib and object rep
+src/main/resources---- drivers
+src/test/java--- test class
+src/test/resources-- test datas
